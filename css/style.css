@@ -59,6 +59,19 @@ address {
   padding: 0 28px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* header */
 .header {
   background-color: #5e5e5e;
@@ -125,4 +138,36 @@ address {
   line-height: 1.56;
   color: var(--secondary-text-color);
   padding: 10px 30px 10px 40px;
+}
+
+/* about */
+
+.about {
+  padding-top: 122px;
+  padding-bottom: 19px;
+}
+
+.about .container {
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+
+.about-text {
+  line-height: 1.56;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.about-list {
+  display: flex;
+  gap: 71px;
 }
