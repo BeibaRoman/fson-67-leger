@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: var(--secondary-text-color);
   font-size: 18px;
   color: var(--primary-text-color);
@@ -53,14 +53,33 @@ address {
   font-style: normal;
 }
 
+.container {
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
 /* header */
 .header {
   background-color: #5e5e5e;
 }
+
+.header-nav,
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  gap: 40px;
+}
+
 .logo {
   font-size: 35px;
   line-height: calc(42 / 35);
   color: var(--secondary-text-color);
+  display: block;
+  margin-right: auto;
 }
 
 .accent {
@@ -70,4 +89,7 @@ address {
 .header-nav-link {
   line-height: calc(28 / 18);
   color: var(--secondary-text-color);
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
