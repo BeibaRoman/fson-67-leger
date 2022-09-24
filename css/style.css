@@ -1,0 +1,39 @@
+:root {
+  --accent-color: #28a745;
+  --primary-text-color: #333333;
+  --secondary-text-color: #ffffff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--secondary-text-color);
+  font-size: 18px;
+  color: var(--primary-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* header */
+.header {
+  background-color: #5e5e5e;
+}
+.logo {
+  font-size: 35px;
+  line-height: calc(42 / 35);
+  color: var(--secondary-text-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.header-nav-link {
+  line-height: calc(28 / 18);
+  color: var(--secondary-text-color);
+}
