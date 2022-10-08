@@ -220,13 +220,32 @@ address {
 /* about */
 
 .about {
-  padding-top: 122px;
+  padding-top: 40px;
   padding-bottom: 19px;
+  background-color: #f4f4f4;
+
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .about .container {
   padding-left: 66px;
   padding-right: 66px;
+}
+
+.about-icon-wrapper {
+  background-color: var(--accent-color);
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-title {
