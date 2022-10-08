@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--secondary-text-color);
   font-size: 18px;
   color: var(--primary-text-color);
@@ -74,7 +74,8 @@ address {
 
 /* header */
 .header {
-  background-color: #5e5e5e;
+  position: absolute;
+  width: 100%;
 }
 
 .header-nav,
@@ -91,12 +92,19 @@ address {
   font-size: 35px;
   line-height: calc(42 / 35);
   color: var(--secondary-text-color);
-  display: block;
   margin-right: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-right: 10px;
 }
 
 .accent {
   color: var(--accent-color);
+  margin-right: 12px;
 }
 
 .header-nav-link {
@@ -105,7 +113,45 @@ address {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
+
+  position: relative;
+
+  transition: color 250ms ease;
 }
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* приклад  */
+
+/* .header-nav-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.current {
+  color: var(--accent-color);
+} */
 
 /* Hero */
 
@@ -114,6 +160,18 @@ address {
   text-align: center;
   padding-top: 259px;
   padding-bottom: 284px;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -132,13 +190,32 @@ address {
 }
 
 .hero-button {
-  display: inline-block;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
   background-color: var(--accent-color);
   border-radius: 5px;
   line-height: 1.56;
   color: var(--secondary-text-color);
-  padding: 10px 30px 10px 40px;
+  padding: 10px 30px 10px 27px;
+
+  transition: color 250ms ease;
 }
+
+.hero-button-icon {
+  /* fill: var(--secondary-text-color); */
+  fill: currentColor;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: aqua;
+}
+
+/* .hero-button:hover .hero-button-icon,
+.hero-button:focus .hero-button-icon {
+  fill: aqua;
+} */
 
 /* about */
 
