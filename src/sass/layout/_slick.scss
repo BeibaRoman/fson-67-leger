@@ -1,0 +1,19 @@
+.slick {
+  padding: 200px 0;
+  background-color: #dfdddd;
+}
+
+.card {
+  background-color: #5e5e5e;
+  height: 200px;
+  padding: 50px;
+}
+
+.card-title {
+  color: #ffffff;
+  text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}
