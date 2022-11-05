@@ -1,22 +1,44 @@
-.who-we-are {
+.team {
+  text-align: center;
+  padding: 49px 0 19px;
+
+  &-sub-title {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.65;
-    color:  var(--primary-text-color);
-}
-.team-title {
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+
+  &-title {
     font-weight: 300;
     font-size: 38px;
     line-height: 1.26;
     color: var(--primary-text-color);
-}
-.team-article {
+    margin-bottom: 34px;
+  }
+  &-text {
+    line-height: 1.56;
+    margin-bottom: 45px;
+  }
 
-}
+  &-list {
+    display: flex;
+    gap: 20px;
+  }
 
-.team-list {
+  &-name {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.27;
+    margin-bottom: 12px;
+  }
 
-}
-.team-list-item {
+  &-position {
+    line-height: 1.56;
+  }
 
+  &-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
 }
